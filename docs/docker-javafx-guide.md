@@ -15,7 +15,7 @@ application that you want to containerise.
 
 
 
-## Dockerfile
+## Dockerfile Configuration
 
 
 
@@ -115,3 +115,31 @@ If you cannot find the `XLaunch` executable, make sure that you have [installed 
 
     <img src="./images/xlaunch-setup-4.png" alt="XLaunch configuration window" width="50%"/>
 
+## Running the Docker Container
+
+> [!IMPORTANT]
+> Make sure that you have followed all the previous steps before running the Docker container.
+> Failure to do so will likely result in an error.
+
+1. Open any terminal window (Windows Powershell, Command Prompt, Git Bash, etc.) and navigate to the directory
+   where your JavaFX application is located. If you are **using IntelliJ IDEA**, you can just open the terminal
+   window within the IDE in your project directory.
+
+2. If you have not done so yet, build the Docker image by running the following command:
+
+   ```powershell
+   docker build -t <image-name>:<tag> .
+   ```
+   
+   Replace `<image-name>` with the name you want to give to your Docker image and `<tag>` with the image version.
+
+> [!NOTE]
+> The tag is optional, although it is recommended.
+
+3. Run the Docker container by executing the following command:
+
+   ```powershell
+   docker run -e DISPLAY=host.docker.internal:0.0 <image-name>:<tag>
+   ```
+   
+   Replace `<image-name>` and `<tag>` with the same values you used when building the Docker image.
