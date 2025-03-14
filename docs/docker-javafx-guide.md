@@ -61,14 +61,14 @@ we will use Xming as our X server, which you can install:
    
    This command will ask you for permission to run the Xming installation script. Type `Y` and press `Enter` to proceed.
 
-4. (Optional) Verify that Xming was installed correctly by running the following command:
+> [!TIP]
+> You can list all the packages installed by Chocolatey by running the following command:
+> ```powershell
+> choco list
+> ```
+> You should see `Xming` and its version number in the list of installed packages.
 
-   ```powershell
-   choco list
-   ```
-
-   You should see `Xming` and its version number in the list of installed packages. You can now close the
-   Windows Powershell terminal and proceed to the next step.
+   You can now close the Windows Powershell terminal and proceed to the [next step](#xlaunch-configuration).
 
 
 ### Through the Xming installer
@@ -84,7 +84,7 @@ we will use Xming as our X server, which you can install:
 
     <img src="./images/xming-install-2.png" alt="Xming final installation window" width="50%"/>
 
-   Once the installation is complete, proceed to the next step.
+   Once the installation is complete, proceed to the [next step](#xlaunch-configuration).
 
 ## XLaunch Configuration
 
