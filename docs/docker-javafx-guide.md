@@ -32,7 +32,7 @@ we will use Xming as our X server, which you can install:
 
 1. Using the Windows search bar, search for `Windows Powershell` and run it as an administrator.
 
-   <img src="./images/powershell-admin.png" alt="Running Windows Powershell as an administrator" width="70%"/>
+   <img src="images/windows/powershell-admin.png" alt="Running Windows Powershell as an administrator" width="70%"/>
 
 2. Check if you have Chocolatey installed by running the following command:
 
@@ -78,11 +78,11 @@ we will use Xming as our X server, which you can install:
 2. Run the installer and follow the installation instructions. You can leave the default settings as they are
    and click `Next` until you reach the final window.
 
-   <img src="./images/xming-install-1.png" alt="Xming initial installation window" width="50%"/>
+   <img src="images/windows/xming-install-1.png" alt="Xming initial installation window" width="50%"/>
 
 3. Once you reach the final window, click the `Install` button to finish the installation.
 
-    <img src="./images/xming-install-2.png" alt="Xming final installation window" width="50%"/>
+    <img src="images/windows/xming-install-2.png" alt="Xming final installation window" width="50%"/>
 
    Once the installation is complete, proceed to the [next step](#xlaunch-configuration).
 
@@ -101,19 +101,19 @@ If you cannot find the `XLaunch` executable, make sure that you have [installed 
 
 1. Make sure that the `Multiple windows` option is selected and click `Next`.
 
-   <img src="./images/xlaunch-setup-1.png" alt="XLaunch configuration window" width="50%"/>
+   <img src="images/windows/xlaunch-setup-1.png" alt="XLaunch configuration window" width="50%"/>
 
 2. Ensure that `Start no client` is selected and click `Next`.
 
-    <img src="./images/xlaunch-setup-2.png" alt="XLaunch configuration window" width="50%"/>
+    <img src="images/windows/xlaunch-setup-2.png" alt="XLaunch configuration window" width="50%"/>
 
 3. Toggle the `No access control` option and click `Next`.
 
-    <img src="./images/xlaunch-setup-3.png" alt="XLaunch configuration window" width="50%"/>
+    <img src="images/windows/xlaunch-setup-3.png" alt="XLaunch configuration window" width="50%"/>
 
 4. Click `Finish`. The window will close, and the X server will start.
 
-    <img src="./images/xlaunch-setup-4.png" alt="XLaunch configuration window" width="50%"/>
+    <img src="images/windows/xlaunch-setup-4.png" alt="XLaunch configuration window" width="50%"/>
 
 ## Running the Docker Container
 
