@@ -32,7 +32,7 @@ we will use Xming as our X server. You can install Xming by:
 
 1. Using the Windows search bar, search for `Windows Powershell` and run it as an administrator.
 
-   ![Running Windows Powershell as an administrator](./images/powershell-admin.png)
+   <img src="./images/powershell-admin.png" alt="Running Windows Powershell as an administrator" width="70%"/>
 
 2. Check if you have Chocolatey installed by running the following command:
 
@@ -48,8 +48,8 @@ we will use Xming as our X server. You can install Xming by:
    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
    ```
    
-   > [!NOTE]
-   > This command comes from Chocolatey's [installation guide](https://chocolatey.org/install).
+> [!NOTE]
+> This command comes from Chocolatey's [installation guide](https://chocolatey.org/install).
    
 3. Install Xming by running the following command:
 
@@ -64,10 +64,10 @@ we will use Xming as our X server. You can install Xming by:
 2. Run the installer and follow the installation instructions. You can leave the default settings as they are
    and click `Next` until you reach the final window.
 
-   ![Xming initial installation window](./images/xming-install-1.png)
+   <img src="./images/xming-install-1.png" alt="Xming initial installation window" width="50%"/>
 
 3. Once you reach the final window, click the `Install` button to finish the installation.
 
-   ![Xming final installation window](./images/xming-install-2.png)
+    <img src="./images/xming-install-2.png" alt="Xming final installation window" width="50%"/>
 
 ## XLaunch Configuration
