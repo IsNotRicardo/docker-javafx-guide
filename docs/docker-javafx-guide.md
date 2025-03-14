@@ -23,7 +23,7 @@ application that you want to containerise.
 
 In order to run a JavaFX application in a Docker container, you need to have an X server installed on
 your machine. This will allow the JavaFX application to display its GUI on your device. In this guide,
-we will use Xming as our X server. You can install Xming by:
+we will use Xming as our X server, which you can install:
 
 - [Through Chocolatey](#through-chocolatey), a package manager for Windows.
 - [Through the Xming installer](#through-the-xming-installer).
@@ -71,3 +71,31 @@ we will use Xming as our X server. You can install Xming by:
     <img src="./images/xming-install-2.png" alt="Xming final installation window" width="50%"/>
 
 ## XLaunch Configuration
+
+After installing Xming, you need to configure XLaunch to run the X server. Start by searching for `XLaunch`
+in the Windows search bar and running it. Alternatively, you can navigate to the following path:
+`C:\Program Files (x86)\Xming` and run the `XLaunch` executable.
+
+If you cannot find the `XLaunch` executable, make sure that you have [installed Xming](#xming-installation) correctly.
+
+> [!IMPORTANT]
+> You must run `XLaunch` and do the following configuration every time you start your computer to run the X server.
+
+### Configuration Steps
+
+1. Make sure that the `Multiple windows` option is selected and click `Next`.
+
+   <img src="./images/xlaunch-setup-1.png" alt="XLaunch configuration window" width="50%"/>
+
+2. Ensure that `Start no client` is selected and click `Next`.
+
+    <img src="./images/xlaunch-setup-2.png" alt="XLaunch configuration window" width="50%"/>
+
+3. Toggle the `No access control` option and click `Next`.
+
+    <img src="./images/xlaunch-setup-3.png" alt="XLaunch configuration window" width="50%"/>
+
+4. Click `Finish`. The window will close, and the X server will start.
+
+    <img src="./images/xlaunch-setup-4.png" alt="XLaunch configuration window" width="50%"/>
+
