@@ -25,12 +25,14 @@ In order to run a JavaFX application in a Docker container, you need to have an 
 your machine. This will allow the JavaFX application to display its GUI on your device. In this guide,
 we will use Xming as our X server. You can install Xming by:
 
-- [Using Chocolatey](#using-chocolatey), a package manager for Windows.
-- [Using the Xming installer](#using-the-xming-installer).
+- [Through Chocolatey](#through-chocolatey), a package manager for Windows.
+- [Through the Xming installer](#through-the-xming-installer).
 
-### Using Chocolatey
+### Through Chocolatey
 
 1. Using the Windows search bar, search for `Windows Powershell` and run it as an administrator.
+
+   ![Running Windows Powershell as an administrator](./images/powershell-admin.png)
 
 2. Check if you have Chocolatey installed by running the following command:
 
@@ -55,12 +57,17 @@ we will use Xming as our X server. You can install Xming by:
    choco install xming
    ```
 
-   This command will install Xming on your machine.
-
-### Using the Xming installer
+### Through the Xming installer
 
 1. Download the Xming installer from [sourceforge](https://sourceforge.net/projects/xming/).
 
+2. Run the installer and follow the installation instructions. You can leave the default settings as they are
+   and click `Next` until you reach the final window.
 
+   ![Xming initial installation window](./images/xming-install-1.png)
+
+3. Once you reach the final window, click the `Install` button to finish the installation.
+
+   ![Xming final installation window](./images/xming-install-2.png)
 
 ## XLaunch Configuration
