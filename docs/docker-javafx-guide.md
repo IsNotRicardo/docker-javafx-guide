@@ -40,7 +40,7 @@ we will use Xming as our X server, which you can install:
    choco -v
    ```
 
-   If you have Chocolatey installed, you can skip to the next step.
+   If you have Chocolatey installed, the version number will appear, and you can skip to the next step.
 
    Otherwise, you can install it by running the following command:
 
@@ -48,14 +48,28 @@ we will use Xming as our X server, which you can install:
    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
    ```
    
+   This command might ask you for permission to run the Chocolatey installation script. Type `A` and press `Enter` to proceed.
+   
 > [!NOTE]
-> This command comes from Chocolatey's [installation guide](https://chocolatey.org/install).
+> This command comes from Chocolatey's [installation guide](https://chocolatey.org/install). Please refer to it for more information.
    
 3. Install Xming by running the following command:
 
    ```powershell
    choco install xming
    ```
+   
+   This command will ask you for permission to run the Xming installation script. Type `Y` and press `Enter` to proceed.
+
+4. (Optional) Verify that Xming was installed correctly by running the following command:
+
+   ```powershell
+   choco list
+   ```
+
+   You should see `Xming` and its version number in the list of installed packages. You can now close the
+   Windows Powershell terminal and proceed to the next step.
+
 
 ### Through the Xming installer
 
@@ -69,6 +83,8 @@ we will use Xming as our X server, which you can install:
 3. Once you reach the final window, click the `Install` button to finish the installation.
 
     <img src="./images/xming-install-2.png" alt="Xming final installation window" width="50%"/>
+
+   Once the installation is complete, proceed to the next step.
 
 ## XLaunch Configuration
 
