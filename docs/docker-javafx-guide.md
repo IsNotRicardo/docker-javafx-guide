@@ -10,11 +10,12 @@ application that you want to containerise.
 
 ## Prerequisites
 
-
+<!-- Add prerequisites before starting, like having docker, a docker engine, a dockerfile, etc -->
 
 ## Dockerfile Configuration
 
-
+<!-- Add generic dockerfile configuration, such as the main commands to make an image, the package
+installs, etc -->
 
 ## X Server Setup
 
@@ -30,28 +31,45 @@ Follow the steps in the [Windows X server guide](windows-x-server.md).
 
 Follow the steps in the [macOS X server guide](macos-x-server.md).
 
-## Running the Docker Image
+## Building and Running
 
 > [!IMPORTANT]
 > Make sure that you have followed all the previous steps for your OS before running the Docker image.
-> Failure to do so will likely result in an error.
+> Additionally, make sure that Docker Desktop or any Docker Engine is running on your machine.
 
-1. Open any terminal window (Windows Powershell, Command Prompt, Bash, etc.) and navigate to the directory
-   where your JavaFX application is located. If you are **using IntelliJ IDEA** or another IDE, you can just open
-   the terminal window within the IDE in your project directory.
-
-2. If you have not done so yet, build the Docker image by running the following command:
+1. Make sure that the Docker image exists in your local repository. You can do this by running the
+   following command in any terminal:
 
    ```bash
-   docker build -t <image-name>:<tag> .
+   docker images
    ```
+
+   You should see the name of your image listed in the output. If it is not there, you will need to either pull it
+   from a remote repository or build it yourself from a Dockerfile.
    
-   Replace `<image-name>` with the name you want to give to your Docker image and `<tag>` with the image version.
+   If the image is located in a **remote repository**, pull it by running the following command in any terminal:
+
+   ```bash
+   docker pull <docker-username>/<image-name>:<tag>
+   ```
 
 > [!NOTE]
-> The tag is optional, although it is recommended.
+> `<docker-username>` refers to the Docker account that owns the repository where the image is stored.
+   
+   Otherwise, build the Docker image by running the following command:
 
-3. Run the Docker image by executing the following command:
+   ```bash
+   docker build -t <image-name>:<tag> <path-to-dockerfile>
+   ```
+
+   If you are using the terminal from Intellij IDEA or another IDE, the path to the Dockerfile will be the
+   same as the project root directory, which will be a `.`. If you are using a separate terminal, you will need
+   to provide the full path to the Dockerfile or navigate to the directory where it is located.
+
+> [!NOTE]
+> The tag is optional, although it is recommended to keep track of the image versions.
+
+2. Run the Docker image by executing the following command:
 
    ```bash
    docker run -e DISPLAY=host.docker.internal:0.0 <image-name>:<tag>
@@ -70,7 +88,7 @@ Follow the steps in the [macOS X server guide](macos-x-server.md).
 > ```Dockerfile
 > ENV DISPLAY=host.docker.internal:0.0
 > ```
-> After doing this, you will need to run the build command again, and then you can run the image without the
+> After this, you will need to build the image again, and then you can run the `docker run` command without the
 > `-e DISPLAY=host.docker.internal:0.0` flag.
 > 
 > Note that if you have the same environment variable set in the Dockerfile and in the `docker run` command,
