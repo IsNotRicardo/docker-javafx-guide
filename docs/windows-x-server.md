@@ -63,8 +63,6 @@ You can now close the Windows Powershell terminal and proceed to the [next step]
 
     <img src="images/windows/xming-install-2.png" alt="Xming final installation window" width="50%"/>
 
-   Once the installation is complete, proceed to the [next step](#xlaunch-configuration).
-
 ## XLaunch Configuration
 
 After installing Xming, you need to configure XLaunch to run the X server. Start by searching for `XLaunch`
