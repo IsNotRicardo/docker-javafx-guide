@@ -94,4 +94,4 @@ If you cannot find the `XLaunch` executable, make sure that you have [installed 
 
     <img src="images/windows/xlaunch-setup-4.png" alt="XLaunch configuration window" width="50%"/>
 
-You have successfully configured Xming to run the X server. You can now proceed to the [next step](docker-javafx-guide.md#running-the-docker-image).
+You have successfully configured Xming to run the X server. You can now proceed to the [next step](docker-javafx-guide.md#building-and-running).
