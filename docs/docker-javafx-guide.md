@@ -58,3 +58,20 @@ Follow the steps in the [macOS X server guide](macos-x-server.md).
    ```
    
    Replace `<image-name>` and `<tag>` with the same values you used when building the Docker image.
+
+> [!NOTE]
+> The `-e DISPLAY=host.docker.internal:0.0` flag is used to set the display environment variable for the container.
+> `host.docker.internal` is a special DNS name that resolves to the internal IP address used by the host and
+> `0.0` represent the display and screen numbers.
+
+> [!TIP]
+> You can include the environment variable in the Dockerfile to avoid having to set it every time you run the container,
+> by adding the following line:
+> ```Dockerfile
+> ENV DISPLAY=host.docker.internal:0.0
+> ```
+> After doing this, you will need to rebuild the image, and then you can run the container without the
+> `-e DISPLAY=host.docker.internal:0.0` flag.
+> 
+> Note that if you have the same environment variable set in the Dockerfile and in the `docker run` command,
+> the value in the `docker run` command will take precedence.
