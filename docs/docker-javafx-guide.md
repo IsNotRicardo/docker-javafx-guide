@@ -30,10 +30,10 @@ Follow the steps in the [Windows X server guide](windows-x-server.md).
 
 Follow the steps in the [macOS X server guide](macos-x-server.md).
 
-## Running the Docker Container
+## Running the Docker Image
 
 > [!IMPORTANT]
-> Make sure that you have followed all the previous steps for your OS before running the Docker container.
+> Make sure that you have followed all the previous steps for your OS before running the Docker image.
 > Failure to do so will likely result in an error.
 
 1. Open any terminal window (Windows Powershell, Command Prompt, Bash, etc.) and navigate to the directory
@@ -51,7 +51,7 @@ Follow the steps in the [macOS X server guide](macos-x-server.md).
 > [!NOTE]
 > The tag is optional, although it is recommended.
 
-3. Run the Docker container by executing the following command:
+3. Run the Docker image by executing the following command:
 
    ```bash
    docker run -e DISPLAY=host.docker.internal:0.0 <image-name>:<tag>
@@ -65,12 +65,12 @@ Follow the steps in the [macOS X server guide](macos-x-server.md).
 > `0.0` represent the display and screen numbers.
 
 > [!TIP]
-> You can include the environment variable in the Dockerfile to avoid having to set it every time you run the container,
+> You can include the environment variable in the Dockerfile to avoid having to set it every time you run the image,
 > by adding the following line:
 > ```Dockerfile
 > ENV DISPLAY=host.docker.internal:0.0
 > ```
-> After doing this, you will need to rebuild the image, and then you can run the container without the
+> After doing this, you will need to run the build command again, and then you can run the image without the
 > `-e DISPLAY=host.docker.internal:0.0` flag.
 > 
 > Note that if you have the same environment variable set in the Dockerfile and in the `docker run` command,
