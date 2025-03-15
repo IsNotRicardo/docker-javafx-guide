@@ -35,6 +35,7 @@ Follow the steps in the [macOS X server guide](macos-x-server.md).
 
 > [!IMPORTANT]
 > Make sure that you have followed all the previous steps for your OS before running the Docker image.
+> 
 > Additionally, make sure that Docker Desktop or any Docker Engine is running on your machine.
 
 1. Make sure that the Docker image exists in your local repository. You can do this by running the
@@ -52,9 +53,6 @@ Follow the steps in the [macOS X server guide](macos-x-server.md).
    ```bash
    docker pull <docker-username>/<image-name>:<tag>
    ```
-
-> [!NOTE]
-> `<docker-username>` refers to the Docker account that owns the repository where the image is stored.
    
    Otherwise, build the Docker image by running the following command:
 
@@ -67,7 +65,7 @@ Follow the steps in the [macOS X server guide](macos-x-server.md).
    to provide the full path to the Dockerfile or navigate to the directory where it is located.
 
 > [!NOTE]
-> The tag is optional, although it is recommended to keep track of the image versions.
+> The tag is optional when building, although it is recommended to keep track of the image versions.
 
 2. Run the Docker image by executing the following command:
 
