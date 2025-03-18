@@ -95,3 +95,8 @@ Follow the steps in the [Unix/Linux X server guide](unix-linux-x-server.md).
 > 
 > Note that if you have the same environment variable set in the Dockerfile and in the `docker run` command,
 > the value in the `docker run` command will take precedence.
+
+If everything is set up correctly, you should see the JavaFX application running on your screen.
+
+If you are interested in learning about persisting data in Docker containers, you can check out the
+[Docker data persistence guide](docker-data-persistence.md).
