@@ -99,4 +99,4 @@ Follow the steps in the [Unix/Linux X server guide](unix-linux-x-server.md).
 If everything is set up correctly, you should see the JavaFX application running on your screen.
 
 If you are interested in learning about persisting data in Docker containers, you can check out the
-[Docker data persistence guide](docker-data-persistence.md).
+guide on how to [Persist data in Docker containers](docker-data-persistence.md).
