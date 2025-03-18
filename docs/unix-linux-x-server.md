@@ -5,9 +5,9 @@
 
 ## X.org Xhost
 
-Most Unix-based systems come with an X server installed by default in the form of Xhost. All you need to
-do is to configure the X server to allow Docker containers to connect to it. You can do this by running
-the following command:
+Most Unix-based systems come with an X server installed by default in the form of [Xhost](https://www.ibm.com/docs/en/aix/7.1?topic=x-xhost-command).
+All you need to do is to configure the X server to allow Docker containers to connect to it. You can do
+this by running the following command:
 
 ```bash
 xhost +local:docker
