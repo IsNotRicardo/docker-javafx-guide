@@ -31,7 +31,7 @@ Follow the steps in the [macOS X server guide](macos-x-server.md).
 
 ### Unix/Linux
 
-() Follow the steps in the [Unix/Linux X server guide](unix-linux-x-server.md).
+Follow the steps in the [Unix/Linux X server guide](unix-linux-x-server.md).
 
 ## Building and Running
 
