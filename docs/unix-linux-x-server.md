@@ -1,7 +1,7 @@
 # Setting up an X server on Unix/Linux
 
 > [!WARNING]
-> This guide has not been tested and might be incomplete.
+> This section of the guide has not been tested and might be incomplete.
 
 ## X.org Xhost
 
