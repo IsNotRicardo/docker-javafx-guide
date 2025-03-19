@@ -70,10 +70,9 @@ services:
 ```
 
 
-> [!RECOMMENDATION]
+> [!TIP]
 > This is the clearest way to persist data in Docker containers. It is recommended to use a Docker Compose, 
 > especially in case of a multi-container application.
-
 
 > For more information on creating a docker compose, Check out the [Docker Compose Guide](docker-compose-guide.md)!
 
