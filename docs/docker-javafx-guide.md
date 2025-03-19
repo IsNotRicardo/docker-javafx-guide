@@ -29,6 +29,10 @@ Follow the steps in the [Windows X server guide](windows-x-server.md).
 
 Follow the steps in the [macOS X server guide](macos-x-server.md).
 
+### Unix/Linux
+
+Follow the steps in the [Unix/Linux X server guide](unix-linux-x-server.md).
+
 ## Building and Running
 
 > [!IMPORTANT]
@@ -91,3 +95,8 @@ Follow the steps in the [macOS X server guide](macos-x-server.md).
 > 
 > Note that if you have the same environment variable set in the Dockerfile and in the `docker run` command,
 > the value in the `docker run` command will take precedence.
+
+If everything is set up correctly, you should see the JavaFX application running on your screen.
+
+If you are interested in learning about persisting data in Docker containers, you can check out the
+guide on how to [Persist data in Docker containers](docker-data-persistence.md).
