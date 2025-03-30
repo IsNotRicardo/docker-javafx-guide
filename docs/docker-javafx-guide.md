@@ -1,5 +1,7 @@
 # Create a Docker image for a JavaFX application
 
+Made by: [Mahnoor Fatima](https://github.com/MahnoorFatima02), [Ricardo de Sousa](https://github.com/IsNotRicardo) and [Saku Heinonen](https://github.com/SakuJuuH)
+
 ## Introduction
 
 This guide will show you how to create a Docker image for a JavaFX application. It will not, however,
