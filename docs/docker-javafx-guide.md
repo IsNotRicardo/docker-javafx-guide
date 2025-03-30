@@ -6,15 +6,6 @@ This guide will show you how to create a Docker image for a JavaFX application. 
 show you how to create a JavaFX application. The following steps assume that you have a working JavaFX
 application that you want to containerise.
 
-## Prerequisites
-
-<!-- Add prerequisites before starting, like having docker, a docker engine, a dockerfile, etc -->
-
-## Dockerfile Configuration
-
-<!-- Add generic dockerfile configuration, such as the main commands to make an image, the package
-installs, etc -->
-
 ## X Server Setup
 
 In order to run a JavaFX application in a Docker container, you need to have an [X.org Server](https://en.wikipedia.org/wiki/X.Org_Server)
