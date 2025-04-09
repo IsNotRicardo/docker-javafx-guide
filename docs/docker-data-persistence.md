@@ -45,7 +45,7 @@ This will mount the `myvolume` volume into the `/path/in/container` directory in
 
 > [!IMPORTANT]
 You can also use volumes in a `docker-compose.yml` file. For example, the following `docker-compose.yml` file mounts the `myvolume` volume into a container named `mycontainer`:
-
+>
 > Make sure to create the volume before running the `docker-compose` command.
 ```yml
 services:
@@ -73,6 +73,6 @@ services:
 > [!TIP]
 > This is the clearest way to persist data in Docker containers. It is recommended to use a Docker Compose, 
 > especially in case of a multi-container application.
-
+> 
 > For more information on creating a docker compose, Check out the [Docker Compose Guide](docker-compose-guide.md)!
 
